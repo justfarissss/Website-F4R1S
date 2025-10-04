@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, Gamepad2, Copy } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 import { ValorantIcon, RobloxIcon, SteamIcon, XboxIcon } from '@/components/game-icons';
+import Valorant from '../assets/valo.png';
+import Steam from '../assets/steam.jpeg';
+import xbox from '../assets/xbox.png';
+import Roblox from '../assets/roblok.png';
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -22,25 +26,25 @@ const gameNicknames = [
   {
     game: 'Valorant',
     nickname: 'Just#F4R1S',
-    logo: <ValorantIcon />,
+    logo: <img src={Valorant} alt="Valorant" width={40} height={40} />,
     color: 'from-red-500/20 to-gray-900',
   },
   {
     game: 'Roblox',
     nickname: 'JustF4R1S',
-    logo: <RobloxIcon />,
+    logo: <img src={Roblox} alt="Valorant" width={40} height={40} />,
     color: 'from-gray-500/20 to-gray-900',
   },
   {
     game: 'Steam',
     nickname: 'Just F4R1S',
-    logo: <SteamIcon />,
+    logo: <img src={Steam} alt="Valorant" width={40} height={40} />,
     color: 'from-blue-500/20 to-gray-900',
   },
   {
     game: 'Xbox',
     nickname: 'JustF4R1S',
-    logo: <XboxIcon />,
+    logo: <img src={xbox} alt="Valorant" width={40} height={40} />,
     color: 'from-green-500/20 to-gray-900',
   },
 ];
