@@ -28,21 +28,21 @@ const pageTransition = {
 
 const services = [
   {
-    title: 'Add stereo sound to your desktop discord',
+    title: 'Stereo in Your Discord Desktop',
     price: 'Rp. 5.000',
-    features: ['Can using Vencord / Batterdiscord'],
+    features: ['Adding stereo to desktop discord', 'No Using Vencord & Betterdiscord', 'No need to install anything', 'Easy and Fast' ],
     isFeatured: false,
   },
   {
-    title: 'Setup Voicemeeter',
+    title: 'Setup Voicemeeter Only',
     price: 'Rp. 50.000',
-    features: ['Voicemeeter Only'],
+    features: ["Voicemeeter Configuration", "Can reflect the sound of music from your microphone", "Easy to use", "Easy and Fast"],
     isFeatured: false,
   },
   {
     title: 'Voicemeeter + Stereo',
     price: 'Rp. 55.000',
-    features: ['Voicemeeter Configuration', 'Adding stereo to desktop discord'],
+    features: ['Voicemeeter Configuration', 'Adding stereo to desktop discord', 'No Using Vencord & Betterdiscord', 'Easy and Fast'],
     isFeatured: false,
   },
   {
@@ -54,6 +54,7 @@ const services = [
       'Installation of VST Plugins for FX in microphone',
       'Setup for singing or voice chatting',
       'Adding stereo to desktop discord',
+      "Can reflect the sound of music from your microphone",
     ],
     isFeatured: true,
   },
