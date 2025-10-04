@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  @apply bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500;
+  }
+  
+  .card-gradient {
+    background: linear-gradient(135deg, rgba(92, 32, 233, 0.1) 0%, rgba(255, 0, 128, 0.1) 100%);
+  }
+}
