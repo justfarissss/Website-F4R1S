@@ -13,6 +13,7 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
+import discord from '../assets/discord.png';
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -63,7 +64,7 @@ const services = [
 const DiscordIcon = (props) => (
   <img
     alt="Discord Logo"
-    src="https://horizons-cdn.hostinger.com/a63cf1df-2683-4d33-969d-7a49bcbd7600/c498dffe6323b4044b2c323ce56798c7.png"
+    src={discord}
     className={props.className}
     style={{ width: props.width, height: props.height }}
   />

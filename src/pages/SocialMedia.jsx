@@ -16,6 +16,7 @@ import linkin from '../assets/linkedin.png';
 import email from '../assets/email.png';
 import whatsapp from '../assets/whatsapp.png';
 import soundcloudLogo from '../assets/soundcloud.jpg';
+import discord from '../assets/discord.png';
 
 const TikTokIcon = (props) => (
   <img
@@ -115,11 +116,20 @@ const IconWhatsApp = (props) => (
     style={{ width: 100, height: 40 }}
   />
 );
+const IconDiscord = (props) => (
+  <img
+    alt="Discord Logo"
+    src={discord}
+    className={props.className}
+    style={{ width: 100, height: 40 }}
+  />
+);
 
 const socialLinks = [
   { name: 'Instagram', icon: IconInstag, color: '#FFFFFF00', url: 'https://www.instagram.com/just.farissss/' },
   { name: 'TikTok', icon: TikTokIcon, color: '#FFFFFF00', url: 'https://www.tiktok.com/@just.farissss' },
   { name: 'YouTube', icon: IconYoutube, color: '#FFFFFF00', url: 'https://www.youtube.com/@just.farissss' },
+  { name: 'Discord', icon: IconDiscord, color: '#FFFFFF00', url: 'https://discord.com/users/997016243741667379' },
   { name: 'Twitter / X', icon: IconTwitter, color: '#FFFFFF00', url: 'https://x.com/justfarissss' },
   { name: 'Facebook', icon: IconFacebook, color: '#FFFFFF00', url: 'https://www.facebook.com/just.farissss/' },
   { name: 'LinkedIn', icon: IconLinkin, color: '#FFFFFF00', url: 'https://www.linkedin.com/in/justfarissss/' },
