@@ -154,7 +154,7 @@ const SpecsPage = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            <div className="relative aspect-video bg-black/30 rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden">
+            <div className="relative aspect-video bg-black/20 rounded-2xl border border-white/0 flex items-center justify-center overflow-hidden">
               <img className="absolute inset-0 w-full h-full object-cover" alt="F4R1S's actual computer and audio setup" src={pctercintah} />
               <div className="absolute bottom-4 left-0 right-0 text-center p-4">
               </div>
