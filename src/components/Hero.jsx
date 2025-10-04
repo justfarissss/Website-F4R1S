@@ -137,16 +137,16 @@ const Hero = () => {
               <span className="text-sm">Audio Engineer</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-              <MonitorPlay className="w-5 h-5 text-pink-400" />
-              <span className="text-sm">Multimedia Operator</span>
+              <Sliders className="w-5 h-5 text-blue-400" />
+              <span className="text-sm">Mixing Engineer</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Music className="w-5 h-5 text-green-400" />
               <span className="text-sm">Composer Music</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-              <Sliders className="w-5 h-5 text-blue-400" />
-              <span className="text-sm">Mixing Engineer</span>
+              <MonitorPlay className="w-5 h-5 text-pink-400" />
+              <span className="text-sm">Multimedia Operator</span>
             </div>
           </motion.div>
 
