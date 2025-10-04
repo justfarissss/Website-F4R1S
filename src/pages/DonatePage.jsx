@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, QrCode } from 'lucide-react';
+import qris from '../assets/qris.webp';
 
 const pageVariants = {
   initial: { opacity: 0, scale: 0.95 },
@@ -29,7 +30,7 @@ const DonatePage = () => {
         <title>Donate</title>
         <meta name="description" content="Support F4R1S's work through a QRIS donation." />
       </Helmet>
-      <div className="min-h-screen flex flex-col items-center justify-center p-4 relative bg-gray-900 text-white">
+      <div className="min-h-screen flex flex-col items-center justify-center p-4 relative text-white bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e]">
         <div className="absolute top-5 left-5 z-20">
           <Link to="/" className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors duration-300 bg-white/10 backdrop-blur-sm p-3 rounded-full">
             <ArrowLeft size={20} />
@@ -64,10 +65,10 @@ const DonatePage = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ type: 'spring', stiffness: 260, damping: 20, delay: 0.4 }}
-            className="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 shadow-2xl inline-block"
+            className="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/100 shadow-2xl inline-block"
           >
             <img 
-              src="https://horizons-cdn.hostinger.com/a63cf1df-2683-4d33-969d-7a49bcbd7600/3162001f170d195c47db022dd9e828d0.png" 
+              src={qris} 
               alt="QRIS Donation Code for Warung Safira" 
               className="w-64 h-64 md:w-72 md:h-72 rounded-2xl"
             />

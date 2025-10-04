@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Headphones, MonitorPlay, Music, Sliders, User, Briefcase, Settings, Mic, QrCode, Gamepad2, Link as LinkIcon, FolderGit2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useToast } from '@/components/ui/use-toast';
+import fotogagah from '../assets/fotogagah.jpg';
 
 const Hero = () => {
   const { toast } = useToast();
@@ -113,7 +114,7 @@ const Hero = () => {
               <img 
                 className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-purple-500/50 shadow-2xl shadow-purple-500/50 mx-auto object-cover"
                 alt="F4R1S Profile"
-               src="https://horizons-cdn.hostinger.com/a63cf1df-2683-4d33-969d-7a49bcbd7600/1e3262b5d17c6c1f567ab3d363b83706.jpg" />
+               src={fotogagah} />
             </div>
           </motion.div>
 

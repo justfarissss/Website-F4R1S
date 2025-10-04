@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Cpu, HardDrive, Speaker, Mouse, Keyboard, Headphones as Headset } from 'lucide-react';
+import pctercintah from '../assets/pctercintah.webp';
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -68,7 +69,7 @@ const audioGear = {
     { key: 'Keyboard Piano', value: 'Roland XPS-10' },
     { key: 'Audio Interface', value: 'Audient EVO 8' },
     { key: 'Headphone', value: 'AKG 52 Headphone Monitor Audio' },
-    { key: 'TWS', value: 'Soundcore R50i' },
+    { key: 'IEM', value: 'Soundcore R50i' },
     { key: 'Earphone', value: 'CCA Polaris' },
     { key: 'Mic 1', value: 'Behringer XM8500' },
     { key: 'Mic 2', value: 'Behringer C1' },
@@ -154,7 +155,7 @@ const SpecsPage = () => {
             transition={{ duration: 0.7, delay: 0.4 }}
           >
             <div className="relative aspect-video bg-black/30 rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden">
-              <img className="absolute inset-0 w-full h-full object-cover" alt="F4R1S's actual computer and audio setup" src="https://horizons-cdn.hostinger.com/a63cf1df-2683-4d33-969d-7a49bcbd7600/5c1cb45e0f92b3ee283935136c7f6021.png" />
+              <img className="absolute inset-0 w-full h-full object-cover" alt="F4R1S's actual computer and audio setup" src={pctercintah} />
               <div className="absolute bottom-4 left-0 right-0 text-center p-4">
               </div>
             </div>

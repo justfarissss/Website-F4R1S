@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, User, MapPin, Pencil as Piano, Languages, GraduationCap, Building } from 'lucide-react';
+import photo from '../assets/photo-profile2.webp';
 
 const pageVariants = {
   initial: { opacity: 0, scale: 0.9 },
@@ -54,7 +55,7 @@ const AboutMe = () => {
                 <img
                   className="w-40 h-40 rounded-full object-cover border-4 border-purple-500/50 shadow-lg"
                   alt="Muhammad Faristanto Salman"
-                 src="https://horizons-cdn.hostinger.com/a63cf1df-2683-4d33-969d-7a49bcbd7600/e70599f6859e9c92161f2afec7323e0f.jpg" />
+                 src={photo} />
                 <div className="absolute bottom-0 right-0 bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded-full">
                   <User className="w-5 h-5 text-white" />
                 </div>

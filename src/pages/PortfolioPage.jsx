@@ -3,6 +3,9 @@ import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, HardDrive, Music, Tv, ExternalLink } from 'lucide-react';
+import mixing from '../assets/mixing-music.webp';
+import multimedia from '../assets/multimedia.webp';
+import teknisi from '../assets/teknisi-tkj.webp';
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -21,7 +24,7 @@ const portfolioItems = [
     icon: HardDrive,
     title: 'Computer Engineering',
     description: 'I can fix problems on computers and laptops, troubleshoot hardware and software, reinstall operating systems, assemble computers, and also clean computer components.',
-    imageUrl: 'https://horizons-cdn.hostinger.com/a63cf1df-2683-4d33-969d-7a49bcbd7600/14d511a5db7aeee0d7692bb58c35dd37.png',
+    imageUrl: teknisi,
     imageAlt: 'A person assembling a computer motherboard',
     color: 'from-cyan-500 to-blue-500',
   },
@@ -29,7 +32,7 @@ const portfolioItems = [
     icon: Music,
     title: 'Mixing / Audio Engineering',
     description: 'I can mix vocals, bumpers, and instruments. I also offer composing services on the piano, Voicemeeter setup, and FL Studio configuration for clearer and more stable audio for Live Karaoke or Live Talk.',
-    imageUrl: 'https://horizons-cdn.hostinger.com/a63cf1df-2683-4d33-969d-7a49bcbd7600/b43fa6de9ec1651b9fac827c85d73562.png',
+    imageUrl: mixing,
     imageAlt: 'A digital audio workstation interface with multiple tracks',
     color: 'from-purple-500 to-pink-500',
     link: 'https://drive.google.com/drive/u/3/folders/1OEfE1xwYETlqZqiPPyFHXplawEPuVsZb',
@@ -39,7 +42,7 @@ const portfolioItems = [
     icon: Tv,
     title: 'Multimedia Operator',
     description: 'I can configure OBS for banner events, camera events, and other visualizer effects to create a professional live production environment.',
-    imageUrl: 'https://horizons-cdn.hostinger.com/a63cf1df-2683-4d33-969d-7a49bcbd7600/59ff5ff5d0a7b1eb527ac86bc1b6f38a.jpg',
+    imageUrl: multimedia,
     imageAlt: 'A multi-monitor setup showing OBS streaming software',
     color: 'from-orange-500 to-red-500',
   },
@@ -99,7 +102,7 @@ const PortfolioPage = () => {
                   transition={{ duration: 0.7, delay: index * 0.2 }}
                 >
                   <div className={`md:col-span-2 rounded-2xl overflow-hidden shadow-lg ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
-                    <img className="w-full h-64 object-cover" alt={item.imageAlt} src={item.imageUrl} />
+                    <img className="w-full h-64 object-cover rounded-2xl border-4 border-white/100 shadow-xl" alt={item.imageAlt} src={item.imageUrl} />
                   </div>
                   <div className={`md:col-span-3 ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
                     <div className="flex items-center gap-4 mb-4">

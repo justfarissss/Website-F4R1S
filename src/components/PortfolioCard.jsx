@@ -17,8 +17,8 @@ const PortfolioCard = ({ item, index }) => {
       }
     } else {
       toast({
-        title: "🚧 Feature Coming Soon!",
-        description: "This feature isn't implemented yet—but don't worry!",
+        title: "🚧 Fitur Belum Tersedia",
+        description: "Fitur ini sedang dalam pengembangan.",
       });
     }
   };

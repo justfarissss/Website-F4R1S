@@ -4,55 +4,130 @@ import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Youtube, Twitter, Instagram, Facebook, Linkedin, Mail, Phone } from 'lucide-react';
+// path relatif dari src/pages ke src/assets
+import tiktokLogo from '../assets/tiktok.png';
+import spotifyLogo from '../assets/spoti.png';
+import appleMusicLogo from '../assets/applemusic.png';
+import Instag from '../assets/instagram.png';
+import ytube from '../assets/youtube.png';
+import twit from '../assets/twitter.png';
+import fb from '../assets/facebook.png';
+import linkin from '../assets/linkedin.png';
+import email from '../assets/email.png';
+import whatsapp from '../assets/whatsapp.png';
+import soundcloudLogo from '../assets/soundcloud.jpg';
 
 const TikTokIcon = (props) => (
   <img
     alt="TikTok Logo"
-    src="https://horizons-cdn.hostinger.com/a63cf1df-2683-4d33-969d-7a49bcbd7600/2ec12bc5e5d8d1e69b9e3a30fdfe4eef.png"
+    src={tiktokLogo}
     className={props.className}
-    style={{ width: props.width, height: props.height }}
+    style={{ width: 100, height: 40 }}
   />
 );
 
 const SpotifyIcon = (props) => (
   <img
     alt="Spotify Logo"
-    src="https://horizons-cdn.hostinger.com/a63cf1df-2683-4d33-969d-7a49bcbd7600/c47f905da2489bdffe3002d9ab2ee2fe.png"
+    src={spotifyLogo}
     className={props.className}
-    style={{ width: props.width, height: props.height }}
+    style={{ width: 40, height: 40 }}
   />
 );
 
 const AppleMusicIcon = (props) => (
   <img
     alt="Apple Music Logo"
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Apple_Music_icon.svg/2048px-Apple_Music_icon.svg.png"
+    src={appleMusicLogo}
     className={props.className}
-    style={{ width: props.width, height: props.height }}
+    style={{ width: 150, height: 40}}
   />
 );
 
 const SoundcloudIcon = (props) => (
   <img
     alt="Soundcloud Logo"
-    src="https://horizons-cdn.hostinger.com/a63cf1df-2683-4d33-969d-7a49bcbd7600/ac667ed9d2c71eb24ea17a0e75a2da6e.png"
+    src={soundcloudLogo}
     className={props.className}
-    style={{ width: props.width, height: props.height }}
+    style={{ width: 100, height: 40 }}
+  />
+);
+
+const IconInstag = (props) => (
+  <img
+    alt="Instagram Logo"
+    src={Instag}
+    className={props.className}
+    style={{ width: 100, height: 40 }}
+  />
+);
+
+const IconYoutube = (props) => (
+  <img
+    alt="YouTube Logo"
+    src={ytube}
+    className={props.className}
+    style={{ width: 100, height: 40 }}
+  />
+);
+
+const IconTwitter = (props) => (
+  <img
+    alt="Twitter Logo"
+    src={twit}
+    className={props.className}
+    style={{ width: 100, height: 40 }}
+  />
+);
+
+const IconFacebook = (props) => (
+  <img
+    alt="Facebook Logo"
+    src={fb}
+    className={props.className}
+    style={{ width: 100, height: 40 }}
+  />
+);
+
+const IconLinkin = (props) => (
+  <img
+    alt="LinkedIn Logo"
+    src={linkin}
+    className={props.className}
+    style={{ width: 100, height: 40 }}
+  />
+);
+
+const IconEmail = (props) => (
+  <img
+    alt="Email Logo"
+    src={email}
+    className={props.className}
+    style={{ width: 100, height: 40 }}
+  />
+);
+
+const IconWhatsApp = (props) => (
+  <img
+    alt="WhatsApp Logo"
+    src={whatsapp}
+    className={props.className}
+    style={{ width: 100, height: 40 }}
   />
 );
 
 const socialLinks = [
-  { name: 'Instagram', icon: Instagram, color: '#E4405F', url: 'https://www.instagram.com/just.farissss/' },
-  { name: 'TikTok', icon: TikTokIcon, color: '#000000', url: 'https://www.tiktok.com/@just.farissss' },
-  { name: 'YouTube', icon: Youtube, color: '#FF0000', url: 'https://www.youtube.com/@just.farissss' },
-  { name: 'Twitter / X', icon: Twitter, color: '#1DA1F2', url: 'https://x.com/justfarissss' },
-  { name: 'Facebook', icon: Facebook, color: '#1877F2', url: 'https://www.facebook.com/just.farissss/' },
-  { name: 'LinkedIn', icon: Linkedin, color: '#0A66C2', url: 'https://www.linkedin.com/in/justfarissss/' },
-  { name: 'Spotify', icon: SpotifyIcon, color: '#1dd760', url: 'https://open.spotify.com/artist/3RkUsbVhWLyZPTUy565YZm' },
-  { name: 'Apple Music', icon: AppleMusicIcon, color: '#fa5872', url: 'https://music.apple.com/us/artist/f4r1s/1817775152' },
-  { name: 'Soundcloud', icon: SoundcloudIcon, color: '#FF5500', url: 'https://soundcloud.com/justfarissss' },
-  { name: 'Email', icon: Mail, color: '#EA4335', url: 'mailto:justfarissss.official@gmail.com' },
-  { name: 'WhatsApp', icon: Phone, color: '#25D366', url: 'https://wa.me/6289657737111' },
+  { name: 'Instagram', icon: IconInstag, color: '#FFFFFF00', url: 'https://www.instagram.com/just.farissss/' },
+  { name: 'TikTok', icon: TikTokIcon, color: '#FFFFFF00', url: 'https://www.tiktok.com/@just.farissss' },
+  { name: 'YouTube', icon: IconYoutube, color: '#FFFFFF00', url: 'https://www.youtube.com/@just.farissss' },
+  { name: 'Twitter / X', icon: IconTwitter, color: '#FFFFFF00', url: 'https://x.com/justfarissss' },
+  { name: 'Facebook', icon: IconFacebook, color: '#FFFFFF00', url: 'https://www.facebook.com/just.farissss/' },
+  { name: 'LinkedIn', icon: IconLinkin, color: '#FFFFFF00', url: 'https://www.linkedin.com/in/justfarissss/' },
+  { name: 'Spotify', icon: SpotifyIcon, color: '#FFFFFF00', url: 'https://open.spotify.com/artist/3RkUsbVhWLyZPTUy565YZm' },
+  { name: 'Apple Music', icon: AppleMusicIcon, color: '#FFFFFF00', url: 'https://music.apple.com/us/artist/f4r1s/1817775152' },
+  { name: 'Soundcloud', icon: SoundcloudIcon, color: '#FFFFFF00', url: 'https://soundcloud.com/justfarissss' },
+  { name: 'Email', icon: IconEmail, color: '#FFFFFF00', url: 'mailto:justfarissss.official@gmail.com' },
+  { name: 'WhatsApp', icon: IconWhatsApp, color: '#FFFFFF00', url: 'https://wa.me/6289657737111' },
 ];
 
 const pageVariants = {

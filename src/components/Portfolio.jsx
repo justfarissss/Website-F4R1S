@@ -66,7 +66,7 @@ const portfolioItems = [
     description: 'Find me in your favorite games.',
     icon: Gamepad2,
     gradient: 'from-fuchsia-500 to-purple-600',
-    path: '/nicknames',
+    path: '/nickname-game',
   },
 ];
 
