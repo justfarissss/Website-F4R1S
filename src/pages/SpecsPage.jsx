@@ -155,9 +155,7 @@ const SpecsPage = () => {
           >
             <div className="relative aspect-video bg-black/30 rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden">
               <img className="absolute inset-0 w-full h-full object-cover" alt="F4R1S's actual computer and audio setup" src="https://horizons-cdn.hostinger.com/a63cf1df-2683-4d33-969d-7a49bcbd7600/5c1cb45e0f92b3ee283935136c7f6021.png" />
-              <div className="absolute inset-0 bg-black/40"></div>
               <div className="absolute bottom-4 left-0 right-0 text-center p-4">
-                <h3 className="text-2xl font-bold text-white">My Creative Space</h3>
               </div>
             </div>
           </motion.div>
