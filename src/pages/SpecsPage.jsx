@@ -21,7 +21,7 @@ const pcSpecs = {
   icon: Cpu,
   color: 'from-sky-400 to-cyan-300',
   specs: [
-    { key: 'CPU', value: 'Intel Core i7 12700 2.1 GHz 12 Core 20 Threads Alder Lake' },
+    { key: 'CPU', value: 'Intel Core i7 12700 2.1 GHz 12 Core 20 Threads' },
     { key: 'Motherboard', value: 'Asrock B660M-HDV' },
     { key: 'WIFI', value: 'Intel AX210 Wifi 6E Card + Paket Antenna' },
     { key: 'USB Mount Panel', value: 'USB 2.0 Back Panel 4 Port' },
