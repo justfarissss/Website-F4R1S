@@ -9,6 +9,7 @@ import SpecsPage from '@/pages/SpecsPage';
 import DonatePage from '@/pages/DonatePage';
 import GameNicknamesPage from '@/pages/GameNicknamesPage';
 import AudioServicesPage from '@/pages/AudioServicesPage';
+import TopUp from '@/pages/TopUp';
 import { Toaster } from '@/components/ui/toaster';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/donate" element={<DonatePage />} />
           <Route path="/nicknames" element={<GameNicknamesPage />} />
           <Route path="/audio-services" element={<AudioServicesPage />} />
+          <Route path="/topupgame" element={<TopUp />} />
         </Routes>
       </AnimatePresence>
       <Toaster />

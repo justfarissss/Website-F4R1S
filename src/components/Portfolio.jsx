@@ -68,6 +68,14 @@ const portfolioItems = [
     gradient: 'from-fuchsia-500 to-purple-600',
     path: '/nickname-game',
   },
+  {
+    id: 8,
+    title: 'Top Up Game',
+    description: 'Top up your favorite games easily.',
+    icon: Gamepad2,
+    gradient: 'from-fuchsia-500 to-purple-600',
+    path: '/topupgame',
+  },
 ];
 
 const Portfolio = () => {

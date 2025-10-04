@@ -14,6 +14,8 @@ import {
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import discord from '../assets/discord.png';
+import whatsapp from '../assets/whatsapp.png';
+import ig from '../assets/instagram.png';
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -70,6 +72,24 @@ const DiscordIcon = (props) => (
   />
 );
 
+const WhatsAppIcon = (props) => (
+  <img
+    alt="Discord Logo"
+    src={whatsapp}
+    className={props.className}
+    style={{ width: props.width, height: props.height }}
+  />
+);
+
+const InstagramIcon = (props) => (
+  <img
+    alt="Discord Logo"
+    src={ig}
+    className={props.className}
+    style={{ width: props.width, height: props.height }}
+  />
+);
+
 const ServiceCard = ({ service, index }) => {
   return (
     <Dialog>
@@ -117,12 +137,12 @@ const ServiceCard = ({ service, index }) => {
         <div className="grid gap-4 py-4">
           <Button asChild className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold py-6 text-lg">
             <a href="https://www.instagram.com/just.farissss/" target="_blank" rel="noopener noreferrer">
-              <Instagram className="mr-2 h-5 w-5" /> Instagram
+              <InstagramIcon className="mr-2 h-5 w-5" /> Instagram
             </a>
           </Button>
           <Button asChild className="w-full bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-bold py-6 text-lg">
             <a href="https://wa.me/6289657737111" target="_blank" rel="noopener noreferrer">
-              <MessageSquare className="mr-2 h-5 w-5" /> WhatsApp
+              <WhatsAppIcon className="mr-2 h-5 w-5" /> WhatsApp
             </a>
           </Button>
           <Button asChild className="w-full bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white font-bold py-6 text-lg">
