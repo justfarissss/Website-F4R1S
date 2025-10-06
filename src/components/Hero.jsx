@@ -64,7 +64,7 @@ const Hero = () => {
       title: "Nickname Game",
       icon: <Gamepad2 className="w-8 h-8 text-orange-400" />,
       color: "from-orange-500/10 to-transparent",
-      link: "/nickname-game",
+      link: "/nicknames",
     },
   ];
 
