@@ -48,7 +48,7 @@ const Hero = () => {
       link: "/specs",
     },
     {
-      title: "VST & DAW Plugins",
+      title: "My Google Drive",
       icon: <FolderGit2 className="w-8 h-8 text-red-400" />,
       color: "from-red-500/10 to-transparent",
       link: "https://drive.google.com/drive/u/3/folders/1p850u4_FnqaFLGxO220wVIZNnx6unr6A",

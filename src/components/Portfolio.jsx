@@ -46,7 +46,7 @@ const portfolioItems = [
   },
   {
     id: 6,
-    title: 'VST & DAW Plugins',
+    title: 'My Google Drive',
     description: 'My collection of virtual instruments and plugins.',
     icon: Disc,
     gradient: 'from-indigo-500 to-violet-500',
