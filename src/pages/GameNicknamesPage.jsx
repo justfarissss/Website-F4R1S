@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Gamepad2, Copy } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
-import { ValorantIcon, RobloxIcon, SteamIcon, XboxIcon } from '@/components/game-icons';
 import Valorant from '../assets/valo.png';
 import Steam from '../assets/steam.jpeg';
 import xbox from '../assets/xbox.png';
