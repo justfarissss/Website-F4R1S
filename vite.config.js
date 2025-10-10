@@ -202,14 +202,6 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
-	base: '/',                 // penting untuk hosting di root domain
- 	build: { outDir: 'dist' },	 // output build ke folder 'dist'
-	customLogger: logger,
-	plugins: [
-		...(isDev ? [inlineEditPlugin(), editModeDevPlugin(), iframeRouteRestorationPlugin()] : []),
-		react(),
-		addTransformIndexHtml
-	],
 	server: {
 		cors: true,
 		headers: {
@@ -224,6 +216,13 @@ export default defineConfig({
 		},
 	},
 	build: {
+		outDir: 'dist',
+		customLogger: logger,
+	plugins: [
+		...(isDev ? [inlineEditPlugin(), editModeDevPlugin(), iframeRouteRestorationPlugin()] : []),
+		react(),
+		addTransformIndexHtml
+	],
 		rollupOptions: {
 			external: [
 				'@babel/parser',
